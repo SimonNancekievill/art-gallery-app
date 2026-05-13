@@ -30,7 +30,7 @@ export default function App({ Component, pageProps }) {
         setArtPieces(data);
       }
     }
-  }, [data]);
+  });
 
   if (error) {
     console.error("ERROR!", error.info);
