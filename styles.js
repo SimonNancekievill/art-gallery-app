@@ -9,8 +9,7 @@ export default createGlobalStyle`
   section {
     margin: 0;
     padding: 0;
-    border-radius: 12px;
-    overflow: hidden;
+    
   }
   body {
     margin: 0;

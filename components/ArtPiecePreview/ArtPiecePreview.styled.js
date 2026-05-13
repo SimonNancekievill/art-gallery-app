@@ -10,7 +10,9 @@ export const StyledImage = styled(Image)`
 
 export const ImageWrap = styled.div`
   position: relative;
-  aspect-ratio: 4/3;
+  aspect-ratio: 3 / 4;
+  border-radius: 4px;
+  overflow: hidden;
 `;
 export const FavoriteButtonWrap = styled.div`
   position: absolute;
