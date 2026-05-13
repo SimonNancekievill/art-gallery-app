@@ -3,7 +3,12 @@ import FavoriteButton from "@/components/FavoriteButton";
 import { ToggleFavorite } from "@/libs/artPieces";
 import ColorPalette from "../ColorPalette";
 import CommentsForm from "../CommentsForm";
-import { CardWrapper, ColorWrapper, FormWrapper } from "./ArtPieceCard.styled";
+import {
+  ColorWrapper,
+  FormWrapper,
+  DetailWrapper,
+  ArtistYear,
+} from "./ArtPieceCard.styled";
 import {
   ImageWrap,
   StyledImage,
@@ -25,14 +30,13 @@ export default function ArtPieceCard({
       <span>
         <Link href="/art-pieces">&lt; Go Back to Overview</Link>
       </span>
-      <section aria-label="Art Piece Section">
+      <DetailWrapper aria-label="Art Piece Section">
         <ImageWrap>
           <Link href={`/art-pieces/${slug}`}>
             <StyledImage
               src={imageSource}
               alt={name}
-              width="300"
-              height="150"
+              fill
               style={{
                 objectFit: "cover",
               }}
@@ -47,16 +51,18 @@ export default function ArtPieceCard({
             />
           </FavoriteButtonWrap>
         </ImageWrap>
-
         <ColorWrapper aria-label="Colors Section">
           <ColorPalette colors={colors} />
         </ColorWrapper>
-        <p>{genre}</p>
         <CardTitle>
           {artist}: {name}
         </CardTitle>
-        <CardArtist>{year}</CardArtist>
-      </section>
+        <ArtistYear>
+          {year}
+          <br></br>
+          {genre}
+        </ArtistYear>
+      </DetailWrapper>
       <FormWrapper aria-label="Form Section">
         <CommentsForm
           artPieces={artPieces}
