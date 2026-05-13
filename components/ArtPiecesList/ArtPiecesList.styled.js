@@ -10,7 +10,7 @@ export const ListWrapper = styled.ul`
   grid-auto-columns: 85vw;
   gap: 24px;
   list-style: none;
-  padding: 24px;
+  padding: 0 24px;
   margin: 0;
   overflow-x: auto;
   grid-auto-flow: column;

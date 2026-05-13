@@ -41,7 +41,6 @@ export const ArtistYear = styled.p`
   font-family: Raleway, sans-serif;
   font-weight: 300;
   letter-spacing: -0.01em;
-  text-align: left;
 `;
 export const ArtistGenre = styled.p`
   margin: 12px 12px 6px 0px;
@@ -50,5 +49,4 @@ export const ArtistGenre = styled.p`
   font-family: Raleway, sans-serif;
   font-weight: 300;
   letter-spacing: -0.01em;
-  text-align: left;
 `;

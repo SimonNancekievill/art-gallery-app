@@ -28,10 +28,11 @@ export const FavoriteButtonWrapGallery = styled.div`
 `;
 export const FavoriteButtonWrapDetail = styled.div`
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  flex-direction: column;
   margin-top: 16px;
   gap: 12px;
+  padding: 0 24px;
+  margin-top: 16px;
 `;
 export const FavoriteButtonWrap = styled.div`
   position: absolute;
@@ -60,4 +61,5 @@ export const CardArtist = styled.p`
   font-family: Raleway, sans-serif;
   font-weight: 300;
   letter-spacing: -0.01em;
+  color: #999;
 `;

@@ -1,4 +1,3 @@
-import FavoriteIcon from "@/assets/bookmark.svg";
 import { StyledButton } from "./FavoriteButton.styled";
 
 export default function FavoriteButton({
@@ -19,7 +18,7 @@ export default function FavoriteButton({
       disabled={disabled ? "disabled" : null}
       $variant={$variant}
     >
-      <FavoriteIcon />
+      {isFavorite ? "♥" : "♡"}
     </StyledButton>
   );
 }
