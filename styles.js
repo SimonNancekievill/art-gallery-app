@@ -6,10 +6,14 @@ export default createGlobalStyle`
   *::after {
     box-sizing: border-box;
   }
-
+  section {
+    margin: 0;
+    padding: 0;
+    border-radius: 12px;
+    overflow: hidden;
+  }
   body {
     margin: 0;
-     padding:1em 3em 3em;
     color:#333;
     background:#eaeaea;
     font-family: Raleway, sans-serif;
@@ -28,16 +32,19 @@ export default createGlobalStyle`
     font-size: 2rem;
     line-height: 1.25;
     letter-spacing: -0.015;
+    font-family: Raleway, sans-serif;
   }
   h3 {
     font-size: 1.75rem;
     line-height: 1.3;
     letter-spacing: 0.01em;
+    font-weight: 400;
   }
   p {
     font-size: 1rem;
     line-height: 1.6;
     letter-spacing: 0.01em;
+    font-family: DBMonoLight, monospace;
   }
 
 
@@ -47,8 +54,12 @@ export default createGlobalStyle`
     margin:.5em 0;
     display:inline-table;
     font-family: DBMonoLight, monospace;
+    letter-spacing: -0.02em;
+    font-size: 0.85rem;
   }
   a:hover {text-decoration:underline;}
+
+
 
 
 

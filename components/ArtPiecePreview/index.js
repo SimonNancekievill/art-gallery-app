@@ -1,7 +1,13 @@
 import Link from "next/link";
 import FavoriteButton from "../FavoriteButton";
 import { ToggleFavorite } from "@/libs/artPieces";
-import { ImageWrap, StyledImage } from "./ArtPiecePreview.styled";
+import {
+  ImageWrap,
+  StyledImage,
+  FavoriteButtonWrap,
+  CardTitle,
+  CardArtist,
+} from "./ArtPiecePreview.styled";
 
 export default function ArtPiecePreview({ artPieces, artPiece, setArtPieces }) {
   const { imageSource, name, slug, artist } = artPiece;
@@ -10,19 +16,19 @@ export default function ArtPiecePreview({ artPieces, artPiece, setArtPieces }) {
     <section aria-label="Art Piece Section">
       <ImageWrap>
         <Link href={`/art-pieces/${slug}`}>
-          <StyledImage src={imageSource} alt={name} width={300} height={150} />
+          <StyledImage src={imageSource} alt={name} fill />
         </Link>
-
-        <FavoriteButton
-          onToggleFavorite={() =>
-            setArtPieces(ToggleFavorite(artPieces, artPiece))
-          }
-          isFavorite={artPiece.isFavorite}
-        />
+        <FavoriteButtonWrap>
+          <FavoriteButton
+            onToggleFavorite={() =>
+              setArtPieces(ToggleFavorite(artPieces, artPiece))
+            }
+            isFavorite={artPiece.isFavorite}
+          />
+        </FavoriteButtonWrap>
       </ImageWrap>
-      <h2>
-        &quot;{name}&quot; by {artist}
-      </h2>
+      <CardTitle>{name}</CardTitle>
+      <CardArtist>{artist}</CardArtist>
     </section>
   );
 }

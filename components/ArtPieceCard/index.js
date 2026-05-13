@@ -45,10 +45,10 @@ export default function ArtPieceCard({
         <ColorWrapper aria-label="Colors Section">
           <ColorPalette colors={colors} />
         </ColorWrapper>
+        <p>{genre}</p>
         <h2>
           {artist}: &quot;{name}&quot; <em>{year}</em>
         </h2>
-        <h3>{genre}</h3>
       </CardWrapper>
       <FormWrapper aria-label="Form Section">
         <CommentsForm

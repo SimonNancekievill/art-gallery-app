@@ -1,14 +1,10 @@
 import styled from "styled-components";
 
 export const CardWrapper = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 8px 16px;
-  margin: -8px -16px;
-  border-radius: 4px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 4px;
 `;
 
 export const ColorWrapper = styled.ul`
@@ -17,6 +13,8 @@ export const ColorWrapper = styled.ul`
   list-style: none;
   gap: 1em;
   padding: 0;
+  grid-column: 1;
+  grid-row: 2;
 `;
 
 export const FormWrapper = styled.section`
