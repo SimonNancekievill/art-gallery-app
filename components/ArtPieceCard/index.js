@@ -1,11 +1,16 @@
-import Image from "next/image";
 import Link from "next/link";
 import FavoriteButton from "@/components/FavoriteButton";
 import { ToggleFavorite } from "@/libs/artPieces";
 import ColorPalette from "../ColorPalette";
 import CommentsForm from "../CommentsForm";
 import { CardWrapper, ColorWrapper, FormWrapper } from "./ArtPieceCard.styled";
-import { ImageWrap } from "../ArtPiecePreview/ArtPiecePreview.styled";
+import {
+  ImageWrap,
+  StyledImage,
+  FavoriteButtonWrap,
+  CardTitle,
+  CardArtist,
+} from "@/components/ArtPiecePreview/ArtPiecePreview.styled";
 
 export default function ArtPieceCard({
   artPieces,
@@ -20,10 +25,10 @@ export default function ArtPieceCard({
       <span>
         <Link href="/art-pieces">&lt; Go Back to Overview</Link>
       </span>
-      <CardWrapper aria-label="Art Piece Section">
+      <section aria-label="Art Piece Section">
         <ImageWrap>
           <Link href={`/art-pieces/${slug}`}>
-            <Image
+            <StyledImage
               src={imageSource}
               alt={name}
               width="300"
@@ -33,23 +38,25 @@ export default function ArtPieceCard({
               }}
             />
           </Link>
-
-          <FavoriteButton
-            onToggleFavorite={() =>
-              setArtPieces(ToggleFavorite(artPieces, foundArtPiece))
-            }
-            isFavorite={foundArtPiece.isFavorite}
-          />
+          <FavoriteButtonWrap>
+            <FavoriteButton
+              onToggleFavorite={() =>
+                setArtPieces(ToggleFavorite(artPieces, foundArtPiece))
+              }
+              isFavorite={foundArtPiece.isFavorite}
+            />
+          </FavoriteButtonWrap>
         </ImageWrap>
 
         <ColorWrapper aria-label="Colors Section">
           <ColorPalette colors={colors} />
         </ColorWrapper>
         <p>{genre}</p>
-        <h2>
-          {artist}: &quot;{name}&quot; <em>{year}</em>
-        </h2>
-      </CardWrapper>
+        <CardTitle>
+          {artist}: {name}
+        </CardTitle>
+        <CardArtist>{year}</CardArtist>
+      </section>
       <FormWrapper aria-label="Form Section">
         <CommentsForm
           artPieces={artPieces}

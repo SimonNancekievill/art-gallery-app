@@ -7,9 +7,11 @@ export const ListItem = styled.li`
 
 export const ListWrapper = styled.ul`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(1fr));
-  gap: 32px;
+  grid-auto-columns: 85vw;
+  gap: 24px;
   list-style: none;
   padding: 24px;
   margin: 0;
+  overflow-x: auto;
+  grid-auto-flow: column;
 `;
