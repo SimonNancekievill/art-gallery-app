@@ -1,7 +1,6 @@
 import ArtPiecesList from "@/components/ArtPiecesList";
 import NavBar from "@/components/NavBar";
 import Head from "next/head";
-import styled from "styled-components";
 
 export default function ArtPieces({ artPieces, setArtPieces }) {
   return (

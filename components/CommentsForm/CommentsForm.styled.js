@@ -3,39 +3,55 @@ import styled from "styled-components";
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  margin-top: 32px;
+  gap: 12px;
+  padding: 24px;
 `;
 export const Label = styled.label`
-  font-size: 0.8rem;
+  font-family: Raleway, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #666;
 `;
 export const InputField = styled.input`
-  padding-inline: 20px;
-  padding-block: 10px;
+  padding: 12px 16px;
   font: inherit;
-  font-size: 1.2rem;
-  border-radius: 4px;
-  border: 1px solid lightgray;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #ddd;
+  background: white;
+  outline: none;
+  transition: border-color 0.2s ease;
+
+  &:focus {
+    border-color: #333;
+  }
 `;
 export const SubmitButton = styled.button`
   cursor: pointer;
-  background-color: #f5f5f5;
-  border: 1px solid #dddddd;
-  border-radius: 4px;
-  min-height: 2rem;
-  color: black;
-  &.active {
-    background-color: #ccf2ad;
-  }
+  background-color: #1d1d1f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-family: Raleway, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: opacity 0.2s ease;
 
   &:hover {
-    background-color: #ccf2ad59;
+    opacity: 0.8;
   }
 `;
 export const SuccessMessage = styled.div`
-  border: solid 1.5px #1ed306;
-  border-radius: 4px;
-  background: none;
-  font-size: 0.5rem;
-  align-items: center;
+  margin: 0 24px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: #f0faf0;
+  border: 1.5px solid #a8e6a8;
+  font-size: 0.85rem;
+  color: #2d7a2d;
 `;

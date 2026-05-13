@@ -26,6 +26,8 @@ export default createGlobalStyle`
     font-size: 2.5rem;
     line-height: 1.2;
     letter-spacing: -0.02em;
+    margin: 0;
+    padding: 24px;
   }
   h2 {
     font-size: 2rem;
@@ -49,7 +51,7 @@ export default createGlobalStyle`
 
   a {
     text-decoration:none;
-    color:#d5561f;
+    color:#1d1d1f;
     margin:.5em 0;
     display:inline-table;
     font-family: DBMonoLight, monospace;

@@ -20,6 +20,7 @@ export default function ArtPiecePreview({ artPieces, artPiece, setArtPieces }) {
         </Link>
         <FavoriteButtonWrap>
           <FavoriteButton
+            $variant="gallery"
             onToggleFavorite={() =>
               setArtPieces(ToggleFavorite(artPieces, artPiece))
             }

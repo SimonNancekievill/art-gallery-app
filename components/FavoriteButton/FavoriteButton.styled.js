@@ -3,23 +3,16 @@ import styled from "styled-components";
 export const StyledButton = styled.button`
   all: unset;
   cursor: pointer;
-  position: absolute;
-  top: 1em;
-  right: 1em;
 
   pointer-events: ${(props) => (props.$isDisabled ? "none" : "all")};
 
   & svg {
-    fill: ${(props) => (props.$isFavorite ? "red" : "#000")};
-    & path {
-      color: #fff;
-    }
-  }
-  &:hover svg {
-    fill: ${(props) => (props.$isFavorite ? "red" : "#fff")};
-
-    & path {
-      color: #000;
-    }
+    fill: ${(props) =>
+      props.$isFavorite
+        ? props.$variant === "detail"
+          ? "#1d1d1f"
+          : "white"
+        : "none"};
+    stroke: ${(props) => (props.$variant === "detail" ? "#1d1d1f" : "white")};
   }
 `;
