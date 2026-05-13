@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import Link from "next/link";
 export const StyledNav = styled.nav`
   position: fixed;
   bottom: 0;
@@ -22,7 +22,6 @@ export const NavItem = styled.li`
   flex: 1;
   display: flex;
   border-right: 1px solid #0a0a0b;
-  pointer: cursor;
 
   &.active {
     background-color: #1f2023;
@@ -42,4 +41,9 @@ export const NavItem = styled.li`
     text-decoration: none;
     color: white;
   }
+`;
+export const StyledLink = styled(Link)`
+  font-family: DBMono, monospace;
+  font-size: 1rem;
+  letter-spacing: -0.02em;
 `;

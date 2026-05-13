@@ -1,6 +1,7 @@
 import ArtPiecesList from "@/components/ArtPiecesList";
 import NavBar from "@/components/NavBar";
 import Head from "next/head";
+import { PageWrapper } from "./Styled[slug]";
 
 export default function ArtPieces({ artPieces, setArtPieces }) {
   return (
@@ -8,9 +9,11 @@ export default function ArtPieces({ artPieces, setArtPieces }) {
       <Head>
         <title>Gallery</title>
       </Head>
-      <h1>Art Gallery</h1>
-      <ArtPiecesList artPieces={artPieces} setArtPieces={setArtPieces} />
-     <NavBar />
+      <PageWrapper>
+        <h1>Art Gallery</h1>
+        <ArtPiecesList artPieces={artPieces} setArtPieces={setArtPieces} />
+      </PageWrapper>
+      <NavBar />
     </>
   );
 }

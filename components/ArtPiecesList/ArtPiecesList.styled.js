@@ -2,13 +2,16 @@ import styled from "styled-components";
 
 export const ListItem = styled.li`
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
 `;
 
 export const ListWrapper = styled.ul`
-  margin-bottom: 60px;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 3em;
+  display: grid;
+  grid-auto-columns: 85vw;
+  gap: 24px;
+  list-style: none;
+  padding: 0 24px;
+  margin: 0;
+  overflow-x: auto;
+  grid-auto-flow: column;
 `;

@@ -6,10 +6,16 @@ export default createGlobalStyle`
   *::after {
     box-sizing: border-box;
   }
-
+  section {
+    margin: 0;
+    padding: 0;
+    
+  }
   body {
     margin: 0;
-    font-family: system-ui;
+    color:#333;
+    background:white;
+    font-family: Raleway, sans-serif;
   }
 
   ul {
@@ -20,41 +26,41 @@ export default createGlobalStyle`
     font-size: 2.5rem;
     line-height: 1.2;
     letter-spacing: -0.02em;
+    margin: 0;
+    padding: 24px;
   }
   h2 {
     font-size: 2rem;
     line-height: 1.25;
     letter-spacing: -0.015;
+    font-family: Raleway, sans-serif;
   }
   h3 {
     font-size: 1.75rem;
     line-height: 1.3;
     letter-spacing: 0.01em;
+    font-weight: 400;
   }
   p {
     font-size: 1rem;
     line-height: 1.6;
     letter-spacing: 0.01em;
+    font-family: DBMonoLight, monospace;
   }
 
 
-
-  body {
-    padding:1em 3em 3em;
-    color:#333;
-    background:#eaeaea;
+  a {
+    text-decoration:none;
+    color:#1d1d1f;
+    margin:.5em 0;
+    display:inline-table;
+    font-family: DBMonoLight, monospace;
+    letter-spacing: -0.02em;
+    font-size: 0.85rem;
   }
-
-  h2 {
-    font-size: 1.75rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
-  a {text-decoration:none;color:#d5561f;margin:.5em 0;display:inline-table;}
   a:hover {text-decoration:underline;}
+
+
 
 
 
@@ -64,7 +70,29 @@ export default createGlobalStyle`
     background:#333;
   }
 }
+@font-face {
+  font-family: Raleway;
+  src: url("assets/font/raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
 
-
-
+@font-face {
+  font-family: DBMono;
+  src: url(assets/font/DM_Mono/DMMono-Regular.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: DBMonoMedium;
+  src: url(assets/font/DM_Mono/DMMono-Medium.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: DBMonoLight;
+  src: url(assets/font/DM_Mono/DMMono-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
 `;

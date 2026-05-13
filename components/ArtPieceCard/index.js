@@ -1,11 +1,18 @@
-import Image from "next/image";
 import Link from "next/link";
-import FavoriteButton from "@/components/FavoriteButton";
-import { ToggleFavorite } from "@/libs/artPieces";
 import ColorPalette from "../ColorPalette";
 import CommentsForm from "../CommentsForm";
-import { CardWrapper, ColorWrapper, FormWrapper } from "./ArtPieceCard.styled";
-import { ImageWrap } from "../ArtPiecePreview/ArtPiecePreview.styled";
+import {
+  ColorWrapper,
+  FormWrapper,
+  DetailWrapper,
+  ArtistYear,
+  ArtistGenre,
+} from "./ArtPieceCard.styled";
+import {
+  ImageWrap,
+  StyledImage,
+  CardArtist,
+} from "@/components/ArtPiecePreview/ArtPiecePreview.styled";
 
 export default function ArtPieceCard({
   artPieces,
@@ -17,39 +24,26 @@ export default function ArtPieceCard({
 
   return (
     <>
-      <span>
-        <Link href="/art-pieces">&lt; Go Back to Overview</Link>
-      </span>
-      <CardWrapper aria-label="Art Piece Section">
+      <DetailWrapper aria-label="Art Piece Section">
         <ImageWrap>
           <Link href={`/art-pieces/${slug}`}>
-            <Image
+            <StyledImage
               src={imageSource}
               alt={name}
-              width="300"
-              height="150"
+              fill
               style={{
                 objectFit: "cover",
               }}
             />
           </Link>
-
-          <FavoriteButton
-            onToggleFavorite={() =>
-              setArtPieces(ToggleFavorite(artPieces, foundArtPiece))
-            }
-            isFavorite={foundArtPiece.isFavorite}
-          />
         </ImageWrap>
-
         <ColorWrapper aria-label="Colors Section">
           <ColorPalette colors={colors} />
         </ColorWrapper>
-        <h2>
-          {artist}: &quot;{name}&quot; <em>{year}</em>
-        </h2>
-        <h3>{genre}</h3>
-      </CardWrapper>
+        <CardArtist>{artist}</CardArtist>
+        <ArtistYear>{year}</ArtistYear>
+        <ArtistGenre>{genre}</ArtistGenre>{" "}
+      </DetailWrapper>
       <FormWrapper aria-label="Form Section">
         <CommentsForm
           artPieces={artPieces}
