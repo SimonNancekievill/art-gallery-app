@@ -1,7 +1,7 @@
 import ArtPiecesList from "@/components/ArtPiecesList";
 import NavBar from "@/components/NavBar";
 import Head from "next/head";
-import { PageWrapper } from "./Styled[slug]";
+import { PageWrapper } from "../../StyledSlug";
 
 export default function ArtPieces({ artPieces, setArtPieces }) {
   return (
