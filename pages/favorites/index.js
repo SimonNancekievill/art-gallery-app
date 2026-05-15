@@ -1,6 +1,7 @@
 import FavoritesList from "@/components/FavoritesList";
 import NavBar from "@/components/NavBar";
 import Head from "next/head";
+import { PageWrapper } from "@/StyledSlug";
 
 export default function Favorites({ artPieces, setArtPieces }) {
   return (
@@ -8,9 +9,11 @@ export default function Favorites({ artPieces, setArtPieces }) {
       <Head>
         <title>Favorites</title>
       </Head>
-      <h1>Favorites</h1>
-      <FavoritesList artPieces={artPieces} setArtPieces={setArtPieces} />
-      <NavBar />
+      <PageWrapper>
+        <NavBar />
+        <h1>Favorites</h1>
+        <FavoritesList artPieces={artPieces} setArtPieces={setArtPieces} />
+      </PageWrapper>
     </>
   );
 }

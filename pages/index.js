@@ -2,6 +2,7 @@ import Head from "next/head";
 import NavBar from "@/components/NavBar";
 import { GetRandomArtPiece } from "@/libs/artPieces";
 import Spotlight from "@/components/Spotlight";
+import { PageWrapper } from "@/StyledSlug";
 
 export default function HomePage({ artPieces, setArtPieces }) {
   return (
@@ -9,13 +10,15 @@ export default function HomePage({ artPieces, setArtPieces }) {
       <Head>
         <title>Spotlight</title>
       </Head>
-      <h1>Art Gallery</h1>
-      <Spotlight
-        artPieces={artPieces}
-        artPiece={GetRandomArtPiece(artPieces)}
-        setArtPieces={setArtPieces}
-      />
       <NavBar />
+      <PageWrapper>
+        <h1>Art Gallery</h1>
+        <Spotlight
+          artPieces={artPieces}
+          artPiece={GetRandomArtPiece(artPieces)}
+          setArtPieces={setArtPieces}
+        />
+      </PageWrapper>
     </>
   );
 }

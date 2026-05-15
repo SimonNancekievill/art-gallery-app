@@ -1,5 +1,5 @@
 import ArtPiecePreview from "@/components/ArtPiecePreview";
-import {} from "./FavoriteList.styled";
+import { ListItem, ListWrapper } from "./FavoriteList.styled";
 
 export default function FavoritesList({ artPieces, setArtPieces }) {
   const favoritePieces = artPieces.filter((artPiece) => {
@@ -9,16 +9,16 @@ export default function FavoritesList({ artPieces, setArtPieces }) {
   });
 
   return (
-    <ul>
+    <ListWrapper>
       {favoritePieces?.map((artPiece) => (
-        <li key={artPiece.slug}>
+        <ListItem key={artPiece.slug}>
           <ArtPiecePreview
             artPieces={artPieces}
             artPiece={artPiece}
             setArtPieces={setArtPieces}
           />
-        </li>
+        </ListItem>
       ))}
-    </ul>
+    </ListWrapper>
   );
 }
