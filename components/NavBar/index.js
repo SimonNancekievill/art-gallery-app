@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { useRouter } from "next/router";
 import { StyledNav, NavList, NavItem, StyledLink } from "./NavBar.styled";
 
