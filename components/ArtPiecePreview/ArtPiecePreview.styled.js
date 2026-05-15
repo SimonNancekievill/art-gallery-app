@@ -53,6 +53,8 @@ export const CardTitle = styled.h3`
   font-family: Raleway, sans-serif;
   font-weight: 500;
   letter-spacing: -0.01em;
+  margin: 0;
+  padding: 6px 0 0 0;
 `;
 export const CardArtist = styled.p`
   margin: 12px 12px 0px 0px;
@@ -62,4 +64,6 @@ export const CardArtist = styled.p`
   font-weight: 300;
   letter-spacing: -0.01em;
   color: #999;
+  padding: 0;
+  margin: 0;
 `;

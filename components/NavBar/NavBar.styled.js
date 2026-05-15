@@ -2,12 +2,16 @@ import styled from "styled-components";
 import Link from "next/link";
 export const StyledNav = styled.nav`
   position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  padding: 16px;
+  top: 0;
+  left: 16px;
+  width: calc(100vw - 30px);
   height: 60px;
-  background-color: #0a0a0b;
-  border-top: 1px solid #0a0a0b;
+  color: white;
+  background-color: rgba(61, 61, 61, 0.4);
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+  z-index: 100;
 `;
 
 export const NavList = styled.ul`
@@ -21,29 +25,27 @@ export const NavList = styled.ul`
 export const NavItem = styled.li`
   flex: 1;
   display: flex;
-  border-right: 1px solid #0a0a0b;
-
-  &.active {
-    background-color: #1f2023;
-    font-weight: bold;
-  }
-
-  &:hover {
-    background-color: #1f2023;
-  }
+  justify-content: space-around;
+  align-items: center;
 
   a {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
     height: 100%;
     text-decoration: none;
     color: white;
+
+    &:hover {
+      font-weight: 600;
+    }
   }
 `;
 export const StyledLink = styled(Link)`
   font-family: DBMono, monospace;
-  font-size: 1rem;
-  letter-spacing: -0.02em;
+  font-weight: 200;
+  font-size: clamp(14px, 0.99vw, 14px);
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
 `;
