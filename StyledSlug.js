@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SpanWrapper = styled.div`
-  padding: 16px 24px;
+  padding: 16px 24px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;

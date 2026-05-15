@@ -16,6 +16,7 @@ export default function ArtPiecesDetail({ artPieces, setArtPieces }) {
       <Head>
         <title>{foundArtPiece.name}</title>
       </Head>
+      <NavBar />
       <SpanWrapper>
         <Link href="/art-pieces">← OVERVIEW</Link>
         <FavoriteButton
@@ -32,8 +33,6 @@ export default function ArtPiecesDetail({ artPieces, setArtPieces }) {
         foundArtPiece={foundArtPiece}
         setArtPieces={setArtPieces}
       />
-
-      <NavBar />
     </>
   );
 }

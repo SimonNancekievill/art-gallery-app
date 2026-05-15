@@ -9,11 +9,11 @@ export default function ArtPieces({ artPieces, setArtPieces }) {
       <Head>
         <title>Gallery</title>
       </Head>
+      <NavBar />
       <PageWrapper>
         <h1>Art Gallery</h1>
         <ArtPiecesList artPieces={artPieces} setArtPieces={setArtPieces} />
       </PageWrapper>
-      <NavBar />
     </>
   );
 }
