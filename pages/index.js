@@ -12,7 +12,7 @@ export default function HomePage({ artPieces, setArtPieces }) {
       </Head>
       <NavBar />
       <PageWrapper>
-        <h1>Art Gallery</h1>
+        <h1>Spotlight</h1>
         <Spotlight
           artPieces={artPieces}
           artPiece={GetRandomArtPiece(artPieces)}
