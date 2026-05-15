@@ -5,7 +5,7 @@ import Head from "next/head";
 import Link from "next/link";
 import FavoriteButton from "@/components/FavoriteButton";
 import { ToggleFavorite } from "@/libs/artPieces";
-import { SpanWrapper, StyledPageTitle } from "./Styled[slug]";
+import { SpanWrapper, StyledPageTitle } from "./StyledSlug";
 
 export default function ArtPiecesDetail({ artPieces, setArtPieces }) {
   const router = useRouter();
