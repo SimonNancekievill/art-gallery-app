@@ -7,6 +7,8 @@ export const SpanWrapper = styled.div`
   justify-content: space-between;
 `;
 export const StyledPageTitle = styled.h1`
+  font-family: Sillage;
+  text-transform: uppercase;
   font-size: clamp(2.5rem, 8vw, 5rem);
   font-weight: 800;
   font-style: italic;

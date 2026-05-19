@@ -96,4 +96,10 @@ export default createGlobalStyle`
   font-weight: 300;
   font-style: normal;
 }
+
+@font-face {
+  font-family: Sillage, serif;
+  src: url(/assets/font/Sillage/Dx_Sillage_regular.otf) format("opentype");
+  font-style: normal;
+}
 `;
