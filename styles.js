@@ -98,7 +98,7 @@ export default createGlobalStyle`
 }
 
 @font-face {
-  font-family: Sillage, serif;
+  font-family: DXSillage;
   src: url(/assets/font/Sillage/Dx_Sillage_regular.otf) format("opentype");
   font-style: normal;
 }
