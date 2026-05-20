@@ -7,12 +7,12 @@ export const SpanWrapper = styled.div`
   justify-content: space-between;
 `;
 export const StyledPageTitle = styled.h1`
-  font-family: DXSillage, serif;
-  text-transform: uppercase;
+  font-family: Raleway, sans-serif;
+  /* text-transform: uppercase; */
   font-size: clamp(2.5rem, 8vw, 5rem);
-  font-weight: 400;
+  font-weight: 900;
   line-height: 0.95;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.07em;
   padding: 24px 24px 0;
   margin: 0;
   max-width: calc(100% - 48px);
@@ -24,4 +24,10 @@ export const PageWrapper = styled.main`
     padding: 0 24px;
     margin: 0 0 8px;
   }
+`;
+export const ArtistWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 `;

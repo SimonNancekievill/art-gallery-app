@@ -56,12 +56,11 @@ export const CardTitle = styled.h3`
   padding: 6px 0 0 0;
 `;
 export const CardArtist = styled.p`
-  margin: 4px 12px 0px 0px;
+  margin: 6px 12px 0px 0px;
   line-height: 1.3;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-family: Raleway, sans-serif;
   font-weight: 300;
   letter-spacing: -0.01em;
-  color: #999;
   padding: 0;
 `;
