@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export const StyledImage = styled(Image)`
   object-fit: cover;
-  /* width: 100%;
+  width: 100%;
   height: auto;
-  display: block; */
+  display: block;
 `;
 export const StyledLink = styled(Link)`
   position: relative;

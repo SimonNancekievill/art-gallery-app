@@ -10,9 +10,9 @@ export const StyledPageTitle = styled.h1`
   font-family: Raleway, sans-serif;
   /* text-transform: uppercase; */
   font-size: clamp(2.5rem, 8vw, 5rem);
-  font-weight: 900;
-  line-height: 0.95;
-  letter-spacing: -0.07em;
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -0.05em;
   padding: 24px 24px 0;
   margin: 0;
   max-width: calc(100% - 48px);
