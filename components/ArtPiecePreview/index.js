@@ -7,6 +7,7 @@ import {
   FavoriteButtonWrap,
   CardTitle,
   CardArtist,
+  StyledLink,
 } from "./ArtPiecePreview.styled";
 
 export default function ArtPiecePreview({ artPieces, artPiece, setArtPieces }) {

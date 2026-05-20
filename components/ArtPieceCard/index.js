@@ -1,5 +1,5 @@
-import Link from "next/link";
 import ColorPalette from "../ColorPalette";
+import Link from "next/link";
 import CommentsForm from "../CommentsForm";
 import {
   ColorWrapper,
@@ -12,6 +12,7 @@ import {
   ImageWrap,
   StyledImage,
   CardArtist,
+  StyledLink,
 } from "@/components/ArtPiecePreview/ArtPiecePreview.styled";
 import { ArtistWrapper } from "@/StyledSlug";
 
@@ -28,14 +29,7 @@ export default function ArtPieceCard({
       <DetailWrapper aria-label="Art Piece Section">
         <ImageWrap>
           <Link href={`/art-pieces/${slug}`}>
-            <StyledImage
-              src={imageSource}
-              alt={name}
-              fill
-              style={{
-                objectFit: "cover",
-              }}
-            />
+            <StyledImage src={imageSource} alt={name} fill />
           </Link>
         </ImageWrap>
         <ColorWrapper aria-label="Colors Section">
