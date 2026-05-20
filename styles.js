@@ -15,7 +15,7 @@ export default createGlobalStyle`
     padding-top: 60px;
     margin: 0;
     color:#333;
-    background:white;
+    background: rgb( 245, 245, 240);
     font-family: Raleway, sans-serif;
   }
 
@@ -65,12 +65,7 @@ export default createGlobalStyle`
 
 
 
-@media (prefers-color-scheme: dark) {
-  body {
-    color:#eaeaea;
-    background:#333;
-  }
-}
+
 @font-face {
   font-family: Raleway;
   src: url(/assets/font/Raleway/Raleway-VariableFont_wght.ttf) format("truetype");
