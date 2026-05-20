@@ -14,4 +14,11 @@ export const ListWrapper = styled.ul`
   margin: 0;
   overflow-x: auto;
   grid-auto-flow: column;
+
+  @media (min-width: 768px) {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: auto;
+    overflow-x: visible;
+  }
 `;
