@@ -7,14 +7,15 @@ export const SpanWrapper = styled.div`
   justify-content: space-between;
 `;
 export const StyledPageTitle = styled.h1`
+  font-family: DXSillage, serif;
+  text-transform: uppercase;
   font-size: clamp(2.5rem, 8vw, 5rem);
-  font-weight: 800;
-  font-style: italic;
+  font-weight: 400;
   line-height: 0.95;
   letter-spacing: -0.03em;
   padding: 24px 24px 0;
   margin: 0;
-  max-width: calc() (100% - 48px);
+  max-width: calc(100% - 48px);
 `;
 export const PageWrapper = styled.main`
   padding: 24px 0 0;

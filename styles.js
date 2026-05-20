@@ -80,20 +80,27 @@ export default createGlobalStyle`
 
 @font-face {
   font-family: DBMono;
-  src: url(assets/font/DM_Mono/DMMono-Regular.ttf) format("truetype");
+  src: url(/assets/font/DM_Mono/DMMono-Regular.ttf) format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: DBMonoMedium;
-  src: url(assets/font/DM_Mono/DMMono-Medium.ttf) format("truetype");
+  src: url(/assets/font/DM_Mono/DMMono-Medium.ttf) format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: DBMonoLight;
-  src: url(assets/font/DM_Mono/DMMono-Light.ttf) format("truetype");
+  src: url(/assets/font/DM_Mono/DMMono-Light.ttf) format("truetype");
   font-weight: 300;
   font-style: normal;
+}
+
+@font-face {
+  font-family: DXSillage;
+  src: url(/assets/font/Sillage/Dx_Sillage_regular.otf) format("opentype");
+  font-style: normal;
+  font-weight: 400;
 }
 `;
