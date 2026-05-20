@@ -36,4 +36,5 @@ next-env.d.ts
 
 # Exclude .env but include .env.example
 .env
+.env.local
 !.env.example

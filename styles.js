@@ -73,7 +73,7 @@ export default createGlobalStyle`
 }
 @font-face {
   font-family: Raleway;
-  src: url("assets/font/raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+  src: url(/assets/font/Raleway/Raleway-VariableFont_wght.ttf) format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
