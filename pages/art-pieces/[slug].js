@@ -6,11 +6,22 @@ import Link from "next/link";
 import FavoriteButton from "@/components/FavoriteButton";
 import { ToggleFavorite } from "@/libs/artPieces";
 import { SpanWrapper, StyledPageTitle } from "../../StyledSlug";
+import useSWR from "swr";
 
 export default function ArtPiecesDetail({ artPieces, setArtPieces }) {
   const router = useRouter();
   const { slug } = router?.query;
-  const foundArtPiece = artPieces.find((artPiece) => artPiece.slug === slug);
+
+  const { data, isLoading, mutate } = useSWR(`/api/artpieces/${slug}`);
+  if (isLoading) {
+    return <h1>Loading...</h1>;
+  }
+
+  if (!data) {
+    return;
+  }
+
+  const foundArtPiece = data;
   return (
     <>
       <Head>

@@ -20,10 +20,7 @@ export default function App({ Component, pageProps }) {
   const [artPieces, setArtPieces] = useLocalStorageState("artPieces", {
     defaultValue: [],
   });
-  const { data, error, isLoading, mutate } = useSWR(
-    "https://example-apis.vercel.app/api/art",
-    fetcher
-  );
+  const { data, error, isLoading, mutate } = useSWR("/api/artpieces", fetcher);
   useEffect(() => {
     if (artPieces.length === 0) {
       if (data) {

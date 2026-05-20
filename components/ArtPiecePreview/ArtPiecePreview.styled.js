@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export const StyledImage = styled(Image)`
   object-fit: cover;
-  width: 100%;
+  /* width: 100%;
   height: auto;
-  display: block;
+  display: block; */
 `;
 
 export const ImageWrap = styled.div`
