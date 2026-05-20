@@ -13,6 +13,7 @@ import {
   StyledImage,
   CardArtist,
 } from "@/components/ArtPiecePreview/ArtPiecePreview.styled";
+import { ArtistWrapper } from "@/StyledSlug";
 
 export default function ArtPieceCard({
   artPieces,
@@ -40,9 +41,11 @@ export default function ArtPieceCard({
         <ColorWrapper aria-label="Colors Section">
           <ColorPalette colors={colors} />
         </ColorWrapper>
-        <CardArtist>{artist}</CardArtist>
-        <ArtistYear>{year}</ArtistYear>
-        <ArtistGenre>{genre}</ArtistGenre>{" "}
+        <ArtistWrapper>
+          <CardArtist>{artist}</CardArtist>
+          <ArtistYear>{year}</ArtistYear>
+        </ArtistWrapper>
+        <ArtistGenre>{genre}</ArtistGenre>
       </DetailWrapper>
       <FormWrapper aria-label="Form Section">
         <CommentsForm

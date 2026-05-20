@@ -35,7 +35,7 @@ export const DetailCard = styled.div`
   flex-direction: column;
 `;
 export const ArtistYear = styled.p`
-  margin: 0px 12px 6px 0px;
+  margin: 6px 0px 0px 0px;
   line-height: 1.3;
   font-size: 0.9rem;
   font-family: Raleway, sans-serif;
@@ -43,10 +43,11 @@ export const ArtistYear = styled.p`
   letter-spacing: -0.01em;
 `;
 export const ArtistGenre = styled.p`
-  margin: 12px 12px 6px 0px;
+  margin: 6px 12px 6px 0px;
   line-height: 1.3;
   font-size: 0.9rem;
   font-family: Raleway, sans-serif;
-  font-weight: 300;
+  font-weight: 100;
+  color: #999;
   letter-spacing: -0.01em;
 `;

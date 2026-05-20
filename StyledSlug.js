@@ -25,3 +25,9 @@ export const PageWrapper = styled.main`
     margin: 0 0 8px;
   }
 `;
+export const ArtistWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+`;
