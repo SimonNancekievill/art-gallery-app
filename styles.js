@@ -29,6 +29,12 @@ export default createGlobalStyle`
     letter-spacing: -0.02em;
     margin: 0;
     padding: 24px;
+
+    @media (min-width: 768px){
+      font-size: clamp(4rem, 8vw, 8rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
   }
   h2 {
     font-size: 2rem;

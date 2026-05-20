@@ -20,5 +20,8 @@ export const ListWrapper = styled.ul`
     grid-template-columns: repeat(3, 1fr);
     grid-auto-columns: auto;
     overflow-x: visible;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    /* padding: 0 40px; */
   }
 `;

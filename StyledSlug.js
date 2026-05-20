@@ -7,15 +7,18 @@ export const SpanWrapper = styled.div`
   justify-content: space-between;
 `;
 export const StyledPageTitle = styled.h1`
-  font-family: Raleway, sans-serif;
-  /* text-transform: uppercase; */
-  font-size: clamp(2.5rem, 8vw, 5rem);
-  font-weight: 800;
-  line-height: 0.98;
-  letter-spacing: -0.05em;
-  padding: 24px 24px 0;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
   margin: 0;
-  max-width: calc(100% - 48px);
+  padding: 24px 24px 0;
+
+  @media (min-width: 768px) {
+    font-size: clamp(4rem, 8vw, 8rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 0.9;
+  }
 `;
 export const PageWrapper = styled.main`
   padding: 24px 0 0;
