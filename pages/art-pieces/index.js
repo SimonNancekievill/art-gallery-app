@@ -11,7 +11,7 @@ export default function ArtPieces({ artPieces, setArtPieces }) {
       </Head>
       <NavBar />
       <PageWrapper>
-        <h1>Art Gallery</h1>
+        <h1>The Gallery</h1>
         <ArtPiecesList artPieces={artPieces} setArtPieces={setArtPieces} />
       </PageWrapper>
     </>

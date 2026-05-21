@@ -19,6 +19,10 @@ export const ImageWrap = styled.div`
   aspect-ratio: 3 / 4;
   border-radius: 4px;
   overflow: hidden;
+
+  @media (min-width: 768px) {
+    aspect-ratio: 3 / 4;
+  }
 `;
 export const FavoriteButtonWrapGallery = styled.div`
   position: absolute;
